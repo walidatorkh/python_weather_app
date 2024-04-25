@@ -8,16 +8,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Debug API key
+      run: env
+
+    - name: Debug API Key Secret
       run: |
-        echo "API key: $API_KEY"
-        echo "#################"
-      env:
-        API_KEY: ${{ secrets.API_KEY }}
+       echo "API key secret: ${{ secrets.API_KEY }}"
 
     - name: Set Environment
       run: |
         echo "#################"
       env:
+        API_KEY: ${{ secrets.API_KEY }}
         DEVCONTAINER_PATH: .devcontainer/devcontainer.json
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
