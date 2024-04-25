@@ -10,6 +10,7 @@ jobs:
     - name: Debug API key
       run: |
         echo "API key: $API_KEY"
+        echo "#################"
       env:
         API_KEY: ${{ secrets.API_KEY }}
 
