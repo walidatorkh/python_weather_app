@@ -9,6 +9,8 @@ jobs:
     steps:
     - name: Use the API key
       run: |
+      env:
+        DEVCONTAINER_PATH: .devcontainer/devcontainer.json
         echo "API key: ${{ secrets.API_KEY }}"
 
     - uses: actions/checkout@v2
