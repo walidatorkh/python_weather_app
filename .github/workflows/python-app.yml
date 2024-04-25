@@ -6,8 +6,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
     steps:
+    - name: Use the API key
+      run: |
+        echo "API key: ${{ secrets.API_KEY }}"
+
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v2

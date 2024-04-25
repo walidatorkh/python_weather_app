@@ -1,0 +1,16 @@
+
+
+  {
+    "name": "Python application test",
+    "image": "ubuntu-latest",
+    "containerEnv": {
+        "API_KEY": "c5cf8660dca588cd3735d8df6f8c7d9a"
+    },
+
+    "secrets": {
+        "API_KEY": {
+          "description": "This is the api key.",
+          "documentationUrl": "https://openweathermap.org/api"
+        }
+    }
+}
