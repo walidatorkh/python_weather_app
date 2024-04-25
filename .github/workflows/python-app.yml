@@ -16,7 +16,7 @@ jobs:
       env:
         DEVCONTAINER_PATH: .devcontainer/devcontainer.json
       run: | 
-        API key: ${{ secrets.API_KEY }}
+        API_KEY: ${{ secrets.API_KEY }}
 
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
