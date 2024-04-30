@@ -6,6 +6,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    environment: production
     steps:
     - name: Debug API key
       run: env
