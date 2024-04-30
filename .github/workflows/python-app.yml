@@ -17,6 +17,8 @@ jobs:
 
     - name: Debug API Key Secret
       run: |
+       echo "secret.ZOPA: ${{ secrets.ZOPA }}" 
+       echo "secret.API_KEYS: ${{ secrets.API_KEYS }}" 
        echo "secret: ${{ secrets }}" 
        echo "API key secret: ${{ secrets.API_KEY }}"
 
