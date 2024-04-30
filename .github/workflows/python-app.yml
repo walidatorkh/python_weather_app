@@ -17,6 +17,7 @@ jobs:
 
     - name: Debug API Key Secret
       run: |
+       echo "secret: ${{ secrets }}" 
        echo "API key secret: ${{ secrets.API_KEY }}"
 
     - name: Set Environment
