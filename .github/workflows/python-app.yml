@@ -6,9 +6,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment: development
+    environment:
+      name: development
     steps:
-    - name: Debug enviroment
+    - name: Debug Environment
       run: env
 
     - name: Debug API Key Secret
